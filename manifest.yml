@@ -1,0 +1,12 @@
+buildpack: java_buildpack
+
+instances: 1
+memory: 1G
+applications:
+  - name: pcf-chaos-example
+    path: build/libs/demo-0.0.1-SNAPSHOT.jar
+
+    services:
+      - metrics-forwarder-experimentations
+    env:
+      DEBUG: true

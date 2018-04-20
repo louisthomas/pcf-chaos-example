@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: pcf-chaos-example
+
+management:
+  endpoint:
+    beans:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
